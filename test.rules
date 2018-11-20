@@ -1,0 +1,10 @@
+alert tcp any any -> any 80 (msg:"test rule"; content:"GET /"; content:"Host: gilgil.net"; sid:10001; rev:1;)
+alert tcp any any -> any 80 (msg:"test rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10002; rev:1;)
+alert tcp any any -> any 80 (msg:"test rule"; content:"GET /"; content:"Host: test.gilgil.net"; sid:10003; rev:1;)
+alert tcp any any -> any 80 (msg:"test rule"; content:"GET /"; content:"Host: snoopspy.com"; sid:10004; rev:1;)
+alert tcp any any -> any any (msg:"naver!"; content:"naver.com"; sid:10005; rev:1;)
+alert tcp any any -> any any (msg:"twitter!"; content:"twitter.com"; sid:10006; rev:1;)
+alert tcp any any -> any any (msg:"twitter!!"; content:"twimg.com"; sid:10007; rev:1;)
+alert tcp any any -> any any (msg:"facebook!"; content:"facebook.com"; sid:10008; rev:1;)
+alert tcp any any -> any any (msg:"facebook!!"; content:"fbcdn.net"; sid:10009; rev:1;)
+
